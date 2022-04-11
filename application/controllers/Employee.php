@@ -163,12 +163,9 @@ class Employee extends CI_Controller {
                         
 				// Status message with imported data count
 				$notAddCount = ($rowCount - ($insertCount + $updateCount));
-			   // $successMsg = 'Employees imported successfully. Total Rows ('.$rowCount.') | Inserted ('.$insertCount.') | Updated ('.$updateCount.') | Not Inserted ('.$notAddCount.')';
 				$successMsg = 'Employees imported successfully. Total Rows ('.$rowCount.')';
 				$this->session->set_userdata('success_msg', $successMsg);
 			}
-	 		//}
-		 // Insert/update CSV data into database
                     echo "Success";
 	}
     
